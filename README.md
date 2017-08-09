@@ -29,11 +29,35 @@ ESP8266 LCD16*2 LEDRGB1 DHT22
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/create/code.png)
 
+
+ESP8266 NodeMCU LCD I2C : การติดต่อจอ LCD แบบ I2C
+
+NodeMCU รองรับไลบารี Wire ของ Arduino ดังนั้นเราจึงเขียนโคดติดต่ออุปกรณ์แบบ I2C ได้แบบเดียวกับใน Arduino อุปกรณ์ที่นิยมใช้กันอีกตัวคือ จอ LCD เมื่อใช้โมดูลติดต่อแบบ I2C ทำให้ต่อใช้งานได้สะดวง ใช้สายไฟเพียง 2 เส้น วิธีใช้งานดังนี้ 
+
+การต่อสาย ขา I2C ของ NodeMCU คือ
+SCL - D1
+SDA - D2
+จอ LCD ส่วนมากใช้ไฟ 5V ดังนั้นต้องใช้ไฟ 5V จ่ายให้ คือไฟที่มาจากขา Vin ใน NodeMCU 
+
+การต่อขา NodeMCU LCD
+Vin - VCC
+GND - GND
+D1 - SCL
+D2 - SDA
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/create/LCD.png)
+
+Code แสดงผลทางจอ LCD
+
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/create/CODE%20LCD.png)
+
+
 หน้าต่างโค้ดโปรแกรม ที่เขียนบน Arduino
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/Screenshot_1.png)
 
-หน้าต่างแสดงผลการทำงานของ DHT22
+หน้าต่างแสดงผลการทำงานของ 
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20727206_1507666329297025_782399047_o.jpg)
 
