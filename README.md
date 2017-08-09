@@ -24,6 +24,7 @@ ESP8266 LCD16*2 LEDRGB1 DHT22
 สายสีเหลือง -> 2 (สาย ข้อมูล)
 ต่อ R 4.7K คร่อมสายสีแดงกับสายสีเหลือง
 
+
 ฟังก์ชั่นการทำงาน DHT22
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/create/code.png)
