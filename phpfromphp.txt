@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data From phpmyadmin</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script type="text/javascript"></script>
+</head>
+<body>
+<div class="page_content" align="center">
+<header>
+        Data From phpmyadmin
+ </header>
+    <div>
+    <h3 class="boxed">
+        <?php
+            $HOST_NAME = "localhost";
+            $DB_NAME = "data";
+            $CHAR_SET = "charset=utf8"; 
+         
+            $USERNAME = "root";    
+            $PASSWORD = "1234"; 
+         
+         
+            try {
+                $db = new PDO('mysql:host='.$HOST_NAME.';dbname='.$DB_NAME.';'.$CHAR_SET,$USERNAME,$PASSWORD);
+                $temp = $_GET["temp"];
+                $humi = $_GET["humi"];
+                $day = $_GET["day"];
+                $sql = "INSERT INTO esp8266 (temp, humi, day) VALUES ($temp, $humi, $day)";
+                $db->query($sql);
+            }catch (PDOException $e) {
+                   
+                    echo "ไม่สามารถเชื่อมต่อฐานข้อมูลได้ : ".$e->getMessage();
+            }
+            try{
+
+$db = new PDO('mysql:host='.$HOST_NAME.';dbname='.$DB_NAME.';'.$CHAR_SET,$USERNAME,$PASSWORD);
+                $sql = "SELECT * FROM `data` WHERE 1 ORDER BY id DESC LIMIT 1";
+		
+                $query = $db->query($sql);
+echo "<tr align='center' bgcolor='#CCCCCC'> <td> NOW </td></tr>";
+echo "<table border='1' align='center' width='500'>";
+
+echo "<tr align='center' bgcolor='#CCCCCC'><td>ID</td><td>Temp &deg;C &nbsp</td><td>Humi %</td><td>Day</td></tr>";
+while($row = $query->fetch()) {
+
+  echo "<tr>";
+  echo "<td align='center'>" .$row["id"].  "</td> "; 
+  echo "<td align='center'>" .$row["temp"]."</td> ";  
+  echo "<td align='center'>" .$row["humi"].  "</td> ";
+  echo "<td align='center'>" .$row["day"].  "</td> ";
+echo "</tr>";
+}
+echo "</table>";
+
+               
+
+ $db = new PDO('mysql:host='.$HOST_NAME.';dbname='.$DB_NAME.';'.$CHAR_SET,$USERNAME,$PASSWORD);
+                $sql = "SELECT * FROM `data` WHERE 1 ORDER BY id DESC";
+                $query = $db->query($sql);
+echo "<tr align='center' bgcolor='#CCCCCC'> <td> DATA</td></tr>";
+echo "<table border='1' align='center' width='500'>";
+
+echo "<tr align='center' bgcolor='#CCCCCC'><td>ID</td><td>Temp &deg;C &nbsp</td><td>Humi %</td><td>Day</td></tr>";
+while($row = $query->fetch()) {
+  echo "<tr>";
+  echo "<td align='center'>" .$row["id"].  "</td> "; 
+  echo "<td align='center'>" .$row["temp"]."</td> ";  
+  echo "<td align='center'>" .$row["humi"].  "</td> ";
+  echo "<td align='center'>" .$row["day"].  "</td> ";
+echo "</tr>";
+}
+echo "</table>";
+  
+       
+            } catch (PDOException $e) {
+                   
+                    echo "ไม่สามารถเชื่อมต่อฐานข้อมูลได้ : ".$e->getMessage();
+            }
+        ?>
+    </h3>
+    </div>
+</div>
+</body>
+</html>

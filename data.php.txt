@@ -1,0 +1,14 @@
+<?php 
+        $dbconn = mysqli_connect('localhost','root','1234','data') or die ('Connect Fail'. mysqli_connect_error());
+        mysqli_set_charset($dbconn,'utf8');
+        $temp1 = $_GET['temp'];
+        $temp2 = $_GET['humi'];
+        $query = "INSERT INTO data(temp,humi) VALUE ('$temp1','$temp2')";
+        $result = mysqli_query($dbconn,$query);
+        if($result){
+                echo 'เพิ่มข้อมูลเรียบร้อยแล้ว !';
+        } else {
+                echo 'เกิดข้อผิดพลาดในการเพิมข้อมูล !';
+        } 
+                mysqli_close($dbconn);
+?>
