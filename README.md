@@ -86,3 +86,8 @@ D2 - SDA
 -ตัวอย่างการส่งข้อมูล
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20771564_1507666802630311_320918708_o.jpg)
+
+-การต่อวงจร สำหรับ LED แสดงผล
+
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Line/%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3.jpg)
