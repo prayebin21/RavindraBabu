@@ -87,7 +87,18 @@ D2 - SDA
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20771564_1507666802630311_320918708_o.jpg)
 
+
 -การต่อวงจร สำหรับ LED แสดงผล
 
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Line/%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3.jpg)
+
+
+-code การแสดงผลของ LED
+
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Line/code%20led.png)
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Line/code%20led%20fail.png)
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Line/code%20led%20fail%202.png)
