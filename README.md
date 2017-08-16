@@ -61,6 +61,10 @@ D2 - SDA
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20727206_1507666329297025_782399047_o.jpg)
 
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20883515_1509071469149090_566844090_o.png)
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20904239_1509072799148957_1442954064_o.png)
+
 # การต่ออุปกรณ์
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20067709_1407499735994460_691601708_n.png)
