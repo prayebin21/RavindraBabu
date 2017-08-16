@@ -57,9 +57,13 @@ D2 - SDA
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/Screenshot_1.png)
 
-# หน้าต่างแสดงผลการทำงานของ 
+# หน้าต่างแสดงผลการทำงาน และ การแสดงผล บน phpMyAdmin 
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20727206_1507666329297025_782399047_o.jpg)
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20883531_1509075782481992_1678875310_o.png)
+
+![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20883650_1509076155815288_1466038370_o.png)
 
 ![alt text](https://github.com/prayebin21/Ravindrababu/blob/master/Pic/20883515_1509071469149090_566844090_o.png)
 
